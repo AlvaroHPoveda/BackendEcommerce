@@ -6,7 +6,9 @@ const {
 
 // Routers
 const { usersRouter } = require('./routes/users.routes');
-const { productsRouter } = require('./routes/products.routes');
+const {
+  productsRouter
+} = require('./routes/products.routes');
 const { cartsRouter } = require('./routes/carts.routes');
 
 const app = express();
@@ -21,3 +23,5 @@ app.use('/api/v1/cart', cartsRouter);
 app.use(globalErrorHandler);
 
 module.exports = { app };
+
+//require('crypto').randomBytes(64).toString('hex');
